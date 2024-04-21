@@ -1,0 +1,144 @@
+Certainly! I have updated the code to include a form label for the email input field and to improve the contrast for the "Order Online" button. Please find the updated code below:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Treats Bakery</title>
+    <style>
+        /* CSS styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        header {
+            background: #f9f9f9;
+            padding: 10px 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        .order-btn {
+            padding: 10px 20px;
+            background: #ff6b6b;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Main styles */
+        main {
+            padding: 20px;
+        }
+        .baked-good {
+            margin-bottom: 20px;
+        }
+        .baked-good img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .promotions {
+            padding: 20px 0;
+        }
+        footer {
+            background: #f9f9f9;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-info,
+        .location,
+        .subscribe-form {
+            margin-right: 20px;
+        }
+        iframe {
+            border-radius: 5px;
+        }
+        input[type="email"],
+        button {
+            padding: 8px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#visit">Visit Us</a></li>
+            </ul>
+            <a href="#order" class="order-btn">Order Online</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Baked goods section -->
+        <section id="menu">
+            <!-- Featured baked goods -->
+            <div class="baked-good">
+                <img src="images/cupcake.jpg" alt="Cupcake">
+                <h3>Delicious Cupcake</h3>
+                <p>Our signature cupcake made with love.</p>
+            </div>
+            <!-- Add more baked goods here -->
+        </section>
+
+        <!-- Seasonal promotions section -->
+        <section id="promotions">
+            <h2>Seasonal Promotions</h2>
+            <p>Check out our special offers this season!</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="contact-info">
+            <p>Email: info@sweettreatsbakery.com</p>
+            <p>Phone: 555-123-4567</p>
+        </div>
+        <div class="location">
+            <p>Visit Us:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.8710228531!2d-122.43127918496052!3d37.77397287967409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e4b9712f117%3A0x19608e26d04e15ee!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1616064694052!5m2!1sen!2sus" 
+                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="subscribe-form">
+            <h3>Subscribe for Special Offers</h3>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <button class="order-btn">Subscribe</button>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript functionality
+        document.querySelector('.subscribe-form button').addEventListener('click', function() {
+            const email = document.querySelector('.subscribe-form input').value;
+            // Add logic to handle email subscription
+        });
+    </script>
+</body>
+</html>
+```
+
+I hope this updated code resolves the accessibility issues. Let me know if you need further assistance or modifications!
